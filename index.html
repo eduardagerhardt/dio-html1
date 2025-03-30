@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução ao HTML</title>
+</head>
+<body class="backgroundcolor">
+    <style>
+        .backgroundcolor {
+            background-color:white;
+            color:black;
+            font-family: 'times new roman', 'Times New Roman', Times, serif;  
+        }
+    </style>
+   <strong><h1 class="cabeçalho">Introdução ao HTML</h1></strong>
+   <style>
+    .cabeçalho {
+            background-color:whitesmoke;
+            margin:auto;
+            padding:auto;
+            border: auto;
+            color:black;
+            font-family: Arial, Helvetica, sans-serif;
+        }  
+   </style>
+   <!--INDICE-->
+   <hr>
+   <h2 id="back">ÍNDICE</h2>
+   <ol>
+    <li><a href="#historiadainternet">Como surgiu a Internet?</a></li>
+    <li><a href="#oqueehtml">O que é HTML?</a></li>
+    <ul>
+        <li><a href="#estruturabasica">Estrutura Básica do HTML</a></li>
+        <ul>
+            <li><a href="#doctype">Doctype</a></li>
+            <li><a href="#head">Head</a></li>
+            <li><a href="#body">Body</a></li>
+            <li><a href="#linha">Hr</a></li>
+        </ul>
+        <li><a href="#estilosdemarcadores">Estilos de Marcadores</a></li>
+        <ul>
+            <li><a href="#texto">Texto</a></li>
+            <ul>
+                <li><a href="#paragrafo">Parágrafo</a></li>
+                <li><a href="#titulo">Título</a></li>
+                <li><a href="#negrito">Negrito</a></li>
+                <li><a href="#italico">Itálico</a></li>
+                <li><a href="#sublinhado">Sublinhado</a></li>
+                <li><a href="#blockquote">Blockquote</a></li>
+                <li><a href="#supersub">Sup e Sub</a></li>
+                <li><a href="#ancoras">Âncoras</a></li>
+            </ul>
+            <li><a href="#midia">Mídia</a></li>
+        </ul>
+        <li><a href="#listas">Listas ordenadas e não ordenadas</a></li>
+    </ul>
+</ol>
+   <hr>
+   <!--HISTORIA DA INTERNET-->
+   <h2>Como surgiu a Internet? <a href="#back"><sup>↩︎</sup></a></a></h2> 
+   <figure>
+    <img width="500" src="//upload.wikimedia.org/wikipedia/commons/6/6e/DARPA_Logo.jpg" alt="Logo da Darpa">
+    <i><strong><figcaption>Logo da DARPA - Wikipédia</figcaption></strong></i>
+  </figure>
+   <p>Na década de <u><mark>1958</mark></u>, foi desenvolvida uma rede para fazer trocas de informações para as pesquisas militares dos EUA. O nomeando de <strong><abbr title="Arpanet">Advanced Research Projects Agency</abbr></strong>.</p>
+   <p>Com o contexto de corrida espacial, em meio a Guerra Fria, os Soviéticos lançaram o <strong>Sputnik</strong> - o primeiro satélite artificial - para o espaço. Com esse evento o governo norte-americano desenvolveu o projeto que criaria a Internet.</p>
+   <p>A agência desenvolveu um sistema que permitisse envio de informações e dados importantes de pesquisa para proteção e defesa do país em caso de guerra nuclear. Essas informações eram enviadas para o Pentágono e centros militares de pesquisa. O projeto foi conduzido pelo <strong>Robert Taylor</strong> e <strong>Lawrence Roberts</strong> contando com o estudo de outros vários cientistas.
+</p>
+<p> O projeto realizado pela Arpa foi renomeado de Apanet e inaugurada em 1969, na época, apenas quatro computadores nos EUA eram capazes de suportar o envio de dados dessa rede. Foi realizado um teste inicial com o envio da mensagem <mark>"log win"</mark>, mas o computador de Stanford não suportou e travou com recebeu a letra <mark>"g"</mark>. No segundo teste, momentos depois, teve sucesso e a partir daí uma conexão se estabeleceu permanente entre a <strong><abbr title="UCLA">Universidade da Califórnia</abbr></strong> em Los Angeles e SRI.
+</p>
+<p>Já na década de 80 a Internet se expandiu seu uso não apenas para informações de defesa militar, mas, para fins comerciais e privados. 8 anos depois a rede chegou ao Brasil e sendo liberado para uso em <u><mark>1994</mark></u>.
+</p>
+<p>Hoje, a Internet é o principal meio de comunicação do planeta, com mais de 5 bilhões de usuários.</p>
+<!--COMEÇO DA EXPLICAÇÃO O QUE É HTML-->
+<h2 id="oqueehtml">O que é HTML?<a href="#back"><sup>↩︎</sup></a></a></h2>
+<figure>
+    <img width="500" src="//neilpatel.com/wp-content/uploads/2019/09/codigos-html-para-paginas-web-1.webp" alt="Representação do HTML">
+    <i><strong><figcaption>Representação do HTML - NeilPatel</figcaption></strong></i>
+  </figure>
+<p> O <strong><abbr title="HTML">Hypertext Markup Language</abbr></strong> é uma linguagem de marcação de hipertexto utilizada na criação de páginas web. Os marcadores são chamados de <mark>"tags"</mark>. Essas tags servem para indicar uma função na página, como: textos, imagens, vídeos, tabelas...</p>
+<p> Ela foi criada em <u><mark>1990</mark></u> pelo físico britânico <strong>Tim Berners-lee</strong>, para auxiliar na formação de documentos de pesquisa compartilhados entre ele e seus colegas.</p>
+<p>Com a popularização da Internet, o HTML passou a ser utilizado na criação de sites, se tornando um dos pilares da "World Wide Web". A tecnologia atualmente evoluiu e com ele é utilizado o conjunto de outras ferramentas como o <u><mark>CSS</mark></u> e o  <u><mark>JavaScript</mark></u>.</p>
+<!--ESTRUTURA BASICA DO HTML-->
+<h2 id="estruturabasica">Estrutura básica do HTML <a href="#back"><sup>↩︎</sup></a></a></h2>
+<strong><h3 id="doctype">!Doctype html <a href="#back"><sup>↩︎</sup></a></a></h2></h3></strong>
+<p>Para organizar as informações que é recebida e interpretada para um navegador precisa começar a colocar o <code>!Doctype html</code>. Aqui nós temos um <strong><u>exemplo:</u></strong></p>
+<style>
+    .coloridamargem {
+            margin: 10px; 
+            padding: 10px;  
+            border-left: 10px solid yellow; 
+            background-color: whitesmoke; 
+        }
+</style>
+<pre style="background-color: whitesmoke">
+    <code> <div class="coloridamargem">
+        &lt;!doctype html&gt;
+        &lt;html lang="pt-br"&gt;
+        &lt;head&gt;
+          &lt;meta charset="utf-8"&gt;
+          &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+          &lt;title&gt;Exemplo HTML&lt;/title&gt;
+        &lt;head&gt;     
+        &lt;body&gt;
+        &lt;p&gt; Olá, mundo! &lt;/p&gt;
+        &lt;/body&gt;
+      &lt;/html&gt; 
+    </code>
+</pre>
+<!--Head-->
+<h3 id="head">O que é head? <a href="#back"><sup>↩︎</sup></a></a></h3>
+<figure>
+    <img width="500" src="https://th.bing.com/th/id/OIP.8jhATcui56-YIk_HH63w5QHaGf?w=718&h=630&rs=1&pid=ImgDetMain" alt="Representação do Head">
+    <i><strong><figcaption>Representação do Head - Ikasuru</figcaption></strong></i>
+  </figure>
+<p>O <code>header</code> age como um recipiente de tudo o que você deseja incluir na página HTML. Não sendo o conteúdo e sim o <u>cabeçalho</u>. Onde terá descrições que queira que apareça nos resultados de busca. Podendo usar até o <u><abbr title="Cascading Style Sheets">CSS</abbr></u> para estilizar o conteúdo em sí.
+</p>
+<!--BODY-->
+<h3 id="body">O que é Body? <a href="#back"><sup>↩︎</sup></a></a></h3>
+<figure>
+    <img width="500" src="https://i.ytimg.com/vi/LK26L-LGXes/maxresdefault.jpg" alt="Representação do Body">
+    <i><strong><figcaption>Representação do Body - Youtube (Canal Jimmy Alex Pachón Pachoncop)</figcaption></strong></i>
+  </figure>
+<p>O elemento <code>body</code> contém todo o conteúdo que queira mostrar para o público que visita a sua página, sejam eles <u>textos</u>, <u>imagens</u>, <u>vídeos</u> ou qualquer outra coisa.
+</p>
+<!--HR-->
+<h3 id="linha">O que é o hr? <a href="#back"><sup>↩︎</sup></a></a></h3>
+<figure>
+    <img width="500" src="https://images.shiksha.com/mediadata/ugcDocuments/images/wordpressImages/2022_04_HR-Tag-Example.jpg" alt="Representação do Hr">
+    <i><strong><figcaption>Representação do Hr - Shiksha</figcaption></strong></i>
+  </figure>
+<p>O <mark><code>&lt;hr&gt;</code></mark> nada mais é que uma linha. Na imagem à cima temos um exemplo de como fica dentro do navegador.</p>
+<p>Porém, esse elemento tem uma característica. Ele não tem o código fechado.</p>
+<strong><p>Exemplo:</p></strong>
+<pre style="background-color: whitesmoke">
+    <code> <div class="coloridamargem">
+        &lt;img src="www.imagem.com"&gt;
+        &lt;hr&gt;
+    </code>
+</pre>
+<!--ESTILO DE MARCADORES-->
+<h2 id="estilosdemarcadores">Estilos de marcadores <a href="#back"><sup>↩︎</sup></a></a></h2>
+<h3 id="texto">Marcadores de textos</h3>
+<!--PARAGRAFO-->
+<h3 id="paragrafo">Texto - Parágrafo <a href="#back"><sup>↩︎</sup></a></a></h3>
+<p>Para definir um parágrafo é preciso colocar <mark><code>&lt;p&gt;</code></mark> para fazer a linha de código. Definindo um espaçamento de linha</p>
+<pre style="background-color: whitesmoke">
+    <code> <div class="coloridamargem">
+        &lt;p&gt; Olá, mundo! &lt;/p&gt;
+    </code>
+</pre>
+<!--TITULOS-->
+<h3 id="titulo">Texto - Títulos <a href="#back"><sup>↩︎</sup></a></a></h3>
+<p>No HTML usamos o código <mark><code>&lt;h&gt;</code></mark> para colocar algum título. Porém, a cada <mark><u>H</u></mark> que é colocado o título vai diminuindo de tamanho <br/></p>
+<p>Como título,subtítulo, lide... assim por diante terminando no <mark>h6</mark>. Veja os exemplos abaixo:</p>
+<pre style="background-color: whitesmoke">
+    <code> <div class="coloridamargem">
+        &lt;h1&gt; Olá, mundo! &lt;/h1&gt;
+        &lt;h2&gt; Olá, mundo! &lt;/h2&gt;
+        &lt;h3&gt; Olá, mundo! &lt;/h3&gt;
+                ...
+        &lt;h6&gt; Olá, mundo! &lt;/h6&gt;
+    </code>
+</pre>
+<u><strong><p>Sendo assim:</p></strong></u>
+<pre style="background-color: whitesmoke">
+    <code><div class="coloridamargem">
+    <h1>Olá, mundo!</h1> 
+    <h2>Olá, mundo</h2>
+    <h3>Olá, mundo</h3>
+            ...
+    <h6>Olá, mundo</h6>
+    </code>
+</pre>
+<!--NEGRITO-->
+<h3 id="negrito">Texto - Negrito <a href="#back"><sup>↩︎</sup></a></a></h3>
+<p>Para deixar o texto em negrito usamos o código <mark><code>&lt;strong&gt;</code></mark></p>
+<pre style="background-color: whitesmoke">
+    <code> <div class="coloridamargem">
+        &lt;strong&gt; Olá, mundo! &lt;/strong&gt;
+    </code>
+</pre>
+<!--ITALICO-->
+<h3 id="italico">Texto - Itálico <a href="#back"><sup>↩︎</sup></a></a></h3>
+<p>Para deixar o texto itálico basta usar o código <mark><code>&lt;i&gt;</code></mark></p>
+<pre style="background-color: whitesmoke">
+    <code> <div class="coloridamargem">
+        &lt;i&gt; Olá, mundo! &lt;/i&gt;
+    </code>
+</pre>
+<!--SUBLINHADO-->
+<h3 id="sublinhado">Texto - Sublinhado <a href="#back"><sup>↩︎</sup></a></a></h3>
+<p>Para deixar o texto sublinhado usamos o código <mark><code>&lt;u&gt;</code></mark>. <u>U</u> significa <code>underline</code>.</p>
+<pre style="background-color: whitesmoke">
+    <code> <div class="coloridamargem">
+        &lt;u&gt; Olá, mundo! &lt;/u&gt;
+    </code>
+</pre>
+<!--BLOCKQUOTE-->
+<h3 id="blockquote">Texto - Blockquote <a href="#back"><sup>↩︎</sup></a></a></h3>
+<p>O elemento <mark><code>&lt;blockquote&gt;</code></mark> é utilizado para criar citações em bloco. Ele é frequentemente usado para destacar citações de outras fontes ou para enfatizar uma parte específica do texto.</p>
+<p>Veja o exemplo:</p>
+<pre style="background-color: whitesmoke">
+    <code> <div class="coloridamargem">
+        &lt;blockquote&gt;
+            &lt;p&gt; Esta é uma citação em bloco. &lt;/p&gt;
+        &lt;/blockquote&gt;
+    </code>
+</pre>
+<p>Com a linha de código pronta:</p>
+<pre style="background-color: whitesmoke">
+    <code> <div class="coloridamargem">
+        <blockquote>
+            <p>Esta é uma citação em bloco.</p>
+        </blockquote>
+    </code>
+</pre>
+<p>O elemento <code>blockquote</code> geralmente é estilizado com recuo e formatação especial para diferenciá-lo do restante do texto. Ele pode conter outros elementos HTML, como parágrafos, listas e imagens.</p>
+<!--SUP E SUB-->
+<h3 id="supersub">Texto - Sup e Sub <a href="#back"><sup>↩︎</sup></a></a></h3>
+<p>O elemento <mark><code>&lt;sup&gt;</code></mark> é utilizado para criar texto sobrescrito, enquanto o elemento <mark><code>&lt;sub&gt;</code></mark> é utilizado para criar texto subscrito.</p>
+<p>Veja o exemplo:</p>
+<pre style="background-color: whitesmoke">
+    <code> <div class="coloridamargem">
+        &lt;p&gt; O valor de x² + y² = z² &lt;/p&gt;
+        &lt;p&gt; H₂O &lt;/p&gt;
+    </code>
+</pre>
+<p>Com a linha de código pronta:</p>
+<pre style="background-color: whitesmoke">
+    <code> <div class="coloridamargem">
+        <p>O valor de x² + y² = z²</p>
+        <p>H₂O</p>
+    </code>
+</pre>
+<!--ANCORAS-->
+<h3 id="ancoras">Âncoras <a href="#back"><sup>↩︎</sup></a></a></h3>
+<p>
+    As âncoras são utilizadas para criar links dentro do HTML. Para isso usamos o código <mark><code>&lt;a&gt;</code></mark>. O elemento <u><code>href</code></u> é o que define o link. As âncoras são conhecidas como "texto diferente ou azul" dentro da página.
+</p>
+<p>A URL de destino pode ser tanto externa quanto interna dentro da página. Até mesmo uma referência para um website interno. Ele pode se referenciar tanto HTML, gráficos, vídeos, imagens.</p>
+<p>Para uma referencia de dentro do website precisamos fazer um <abbr title="Identificador">id</abbr> utilizando o carácter <strong><code>#</code></strong>. Ao clicar na palavra que está linkada a página <u>"rola"</u> até a região mencionada.</p>
+<h3>Um exemplo de links <u>externos</u>:</h3>
+<pre style="background-color: whitesmoke">
+    <code> <div class="coloridamargem">
+        &lt;a href="https://www.google.com"&gt; Google &lt;/a&gt;
+    </code>
+</pre>
+<h3>Um exemplo de link <u>interno:</u></h3>
+<pre style="background-color: whitesmoke">
+    <code> <div class="coloridamargem">
+        &lt;a href="index.html"&gt; Página HTML &lt;/a&gt;
+    </code>
+</pre>
+<p>Temos outros exemplos de links:</p>
+<pre style="background-color: whitesmoke">
+    <code> <div class="coloridamargem">
+        &lt;a href="https://www.google.com"&gt; Google &lt;/a&gt;
+        &lt;a href="index.html"&gt; Página HTML &lt;/a&gt;
+        &lt;a href="#ancoras"&gt; Âncoras &lt;/a&gt;
+    </code>
+</pre>
+<p>Com a linha de código pronta:</p>
+<pre style="background-color: whitesmoke">
+    <code> <div class="coloridamargem">
+        <a href="https://www.google.com">Google</a>
+        <a href="index.html">Página HTML</a>
+        <a href="#ancoras">Âncoras</a>
+    </code>
+</pre>
+<p>Ao clicar no link <u>"Âncoras"</u> a página irá rolar até a seção de âncoras.</p>
+<p>Para criar um link que abra em uma nova aba, basta adicionar o atributo <mark><code>target="_blank"</code></mark> na tag <mark><code>&lt;a&gt;</code></mark>. Veja o exemplo:</p>
+<pre style="background-color: whitesmoke">
+    <code> <div class="coloridamargem">
+        &lt;a href="https://www.google.com" target="_blank"&gt; Google &lt;/a&gt;
+    </code>
+</pre>
+<p>Com a linha de código pronta:</p>
+<pre style="background-color: whitesmoke">
+    <code> <div class="coloridamargem">
+        <a href="https://www.google.com" target="_blank">Google</a>
+    </code>
+</pre>
+<p>Ao clicar no link, o Google será aberto em uma nova aba do navegador.</p>
+<p>Além disso, você pode adicionar um título ao link usando o atributo <mark><code>title</code></mark>. O título aparecerá como uma dica quando passar o cursor sobre o link. Veja o exemplo:</p>
+<pre style="background-color: whitesmoke">
+    <code> <div class="coloridamargem">
+        &lt;a href="https://www.google.com" title="Acesse o Google"&gt; Google &lt;/a&gt;
+    </code>
+</pre>
+<p>Com a linha de código pronta:</p>
+<pre style="background-color: whitesmoke">
+    <code> <div class="coloridamargem">
+        <a href="https://www.google.com" title="Acesse o Google">Google</a>
+    </code>
+</pre>
+<p>Agora, quando passar o mouse sobre o link, verá a dica "Acesse o Google".</p>
+<p>As âncoras são uma parte fundamental da navegação na web e permitem que os usuários se movam facilmente entre diferentes partes de uma página ou entre páginas diferentes.</p> <br>
+<p>Além disso, as âncoras também podem ser usadas para criar links para seções específicas dentro de uma mesma página. Para fazer isso, você pode usar o atributo <mark><code>id</code></mark> em um elemento HTML e, em seguida, criar um link para esse ID usando o caractere de hashtag (<mark><code>#</code></mark>) seguido pelo nome do ID.</p> <br>
+<p>Veja o exemplo:</p>
+<pre div="ancora1" style="background-color: whitesmoke">
+    <code> <div class="coloridamargem">
+        &lt;p id="ancora1"&gt; Esta é a âncora 1 &lt;/p&gt;
+        &lt;a href="#ancora1"&gt; Ir para a âncora 1 &lt;/a&gt;
+    </code>
+</pre>
+<p>Com a linha de código pronta:</p>
+<pre style="background-color: whitesmoke">
+    <code> <div class="coloridamargem">
+        <p id="ancora1">Esta é a âncora 1</p>
+        <a href="#ancora1">Ir para a âncora 1</a>
+    </code>
+</pre>
+<p>Quando o usuário clicar no link "Ir para a âncora 1", a página rolará automaticamente até a seção marcada com o ID "ancora1".</p>
+<p>As âncoras são uma parte essencial da navegação na web e permitem que os usuários se movam facilmente entre diferentes partes de uma página ou entre páginas diferentes. Elas são amplamente utilizadas em sites, blogs e aplicativos da web para melhorar a experiência do usuário.</p>
+<p>Além disso, as âncoras também podem ser estilizadas usando CSS para se destacarem visualmente. Você pode alterar a cor, o tamanho e outros estilos do texto do link para torná-lo mais atraente.</p>
+<p>Por exemplo:</p>
+<pre style="background-color: whitesmoke">
+    <code> <div class="coloridamargem">
+        &lt;a href="https://www.google.com" style="color: blue; font-size: 18px;"&gt; Google &lt;/a&gt;
+    </code>
+</pre>
+<p>Com a linha de código pronta:</p>
+<pre style="background-color: whitesmoke">
+    <code> <div class="coloridamargem">
+        <a href="https://www.google.com" style="color: blue; font-size: 18px;">Google</a>
+    </code>
+</pre>
+<p>Agora, o link "Google" terá uma cor azul e um tamanho de fonte maior.</p>
+<!--NEGRITO-->
+<h3>Texto - Negrito <a href="#back"><sup>↩︎</sup></a></a></h3>
+<p>Para marcar é preciso usar o código <mark><code>&lt;strong&gt;</code></mark>, assim deixando seu texto negrito.</p>
+<pre style="background-color: whitesmoke">
+    <code> <div class="coloridamargem">
+        &lt;strong&gt; Olá, mundo! &lt;/strong&gt;
+    </code>
+</pre>
+<!--MIDIA-->
+<h3 id="midia">Marcadores de Mídias <a href="#back"><sup>↩︎</sup></a></a></h3>
+<h3 id="imagemevideo">Imagem e vídeo</h3>
+<p>Como mencionado no <u><code>body</code></u>, podemos incluir qualquer coisa nele. Veja o exemplo abaixo de como colocar uma imagem.</p>
+<strong><p>Exemplos:</p></strong>
+<p>Para colocar uma imagem/vídeo nós usamos o elemento <mark>&lt;img&gt;</mark>. Dentro dessa tag existe o elemento src que nada mais é que o <u><mark>source</mark></u>.</p>
+<pre style="background-color: whitesmoke">
+    <code> <div class="coloridamargem">
+        &lt;img src="www.imagem.com"&gt;
+    </code>
+</pre>
+<p>Ao colocar essa tag automáticamente a imagem irá vim com o tamanho real dela. Para selecionar o tamanho só basta colocar o código <u><code>widht</code></u>. Que significa largura.</p>
+<pre style="background-color: whitesmoke">
+    <code> <div class="coloridamargem">
+        &lt;img widht="500" src="www.imagem.com"&gt;
+    </code>
+</pre>
+<!--OL E UL-->
+<h2 id="listas">Marcadores de estruturas <a href="#back"><sup>↩︎</sup></a></a></h2>
+<h3 id="listas">Marcador de estruturas - ol e ul</h3>
+<p>Para criar uma lista ordenada usamos o elemento <mark>&lt;ol&gt;</mark>. Já para criar uma lista não ordenada usamos o elemento <mark>&lt;ul&gt;</mark>.</p>
+<p>Dentro de cada um deles usamos o elemento <mark>&lt;li&gt;</mark> para definir os itens da lista.</p>
+<p>Veja o exemplo abaixo:</p>
+<h3 id="listaordenada">Lista ordenada <a href="#back"><sup>↩︎</sup></a></a></h3>
+<pre style="background-color: whitesmoke">
+    <code> <div class="coloridamargem">
+        &lt;ol&gt;
+            &lt;li&gt; Item 1 &lt;/li&gt;
+            &lt;li&gt; Item 2 &lt;/li&gt;
+            &lt;li&gt; Item 3 &lt;/li&gt;
+        &lt;/ol&gt;
+    </code>
+</pre> 
+<p>Veja como fica com a linha de código pronta:</p>
+<pre style="background-color: whitesmoke">
+    <code> <div class="coloridamargem">
+       <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+       </ol>
+    </code>
+</pre> 
+<h3 id="naoordenada">Lista não ordenada <a href="#back"><sup>↩︎</sup></a></a></h3>
+<pre style="background-color: whitesmoke">
+    <code> <div class="coloridamargem">
+        &lt;ul&gt;
+            &lt;li&gt; Item 1 &lt;/li&gt;
+            &lt;li&gt; Item 2 &lt;/li&gt;
+            &lt;li&gt; Item 3 &lt;/li&gt;
+        &lt;/ul&gt;
+    </code>
+</pre> 
+<p>O mesmo vale para a lista não ordenada:</p>      
+<pre style="background-color: whitesmoke">
+    <code> <div class="coloridamargem">
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2 </li>
+            <li>Item 3 </ul>
+        </ul>
+    </code>
+</pre>
+<!--TYPER-->
+<h3 id="typer">Marcador de estruturas - Input Typer <a href="#back"><sup>↩︎</sup></a></a></h3>
+<p>O elemento <mark>&lt;input&gt;</mark> é utilizado para criar campos de entrada de dados em formulários. O atributo <u><code>type</code></u> define o tipo de campo que será exibido.</p>
+<p>Os tipos de campos mais comuns são:</p>
+<pre style="background-color: whitesmoke">
+    <code> <div class="coloridamargem">
+            &lt;input type="text" name="nome" placeholder="Digite seu nome"&gt;
+            &lt;input type="password" name="senha" placeholder="Digite sua senha"&gt;
+            &lt;input type="color" name="color" placeholder="Escolha sua cor"&gt;
+    </code>
+</pre>
+<ul>
+    <li><code>text</code>: campo de texto simples.</li>
+    <li><code>password</code>: campo de senha, onde os caracteres digitados são ocultos.</li>
+    <li><code>email</code>: campo para inserir endereços de e-mail.</li>
+    <li><code>number</code>: campo para inserir números.</li>
+    <li><code>radio</code>: botão de opção.</li>
+    <li><code>submit</code>: botão para enviar o formulário.</li>
+    <li><code>file</code>: campo para upload de arquivos.</li>
+    <li><code>date</code>: campo para selecionar uma data.</li>
+    <li><code>color</code>: campo para selecionar uma cor.</li>
+    <li><code>tel</code>: campo para inserir números de telefone.</li>
+    <li><code>url</code>: campo para inserir URLs.</li>
+    <li><code>search</code>: campo para pesquisa.</li>
+    <h3>Exemplos de input typer:</h3>
+    <pre style="background-color: whitesmoke">
+        <code> <div class="coloridamargem">
+                &lt;input type="text" name="nome" placeholder="Digite seu nome"&gt;
+                &lt;input type="password" name="senha" placeholder="Digite sua senha"&gt;
+                &lt;input type="color" name="color" placeholder="Escolha sua cor"&gt;
+        </code>
+    </pre>
+    <h3>Com a linha de código pronta:<a href="#back"><sup>↩︎</sup></a></a></h3>
+    <input type="text" name="nome" placeholder="Digite seu nome"></input>
+    <input type="password" name="senha" placeholder="Digite sua senha"></input>
+    <input type="color" name="cor" placeholder="Escolha sua cor"></input>
+    <p>Esses são apenas alguns exemplos de tipos de campos que podem ser criados com o elemento <mark><code>&lt;input&gt;</code></mark>. Existem muitos outros tipos disponíveis, cada um com suas próprias características e funcionalidades.</p>
+<hr>  
+</body>
+<footer>
+    <u><strong><h4 id="referencias">REFERÊNCIAS <a href="#back"><sup>↩︎</sup></a></a></h4></strong></u>
+    <p>HTML básico - Aprendendo desenvolvimento web | MDN. Disponível em: https://developer.mozilla.org/pt-BR/docs/Learn_web_development/Getting_started/Your_first_website/Creating_the_content. Acesso em: 30 mar. 2025.</p>
+    <p>W3SCHOOLS. HTML Reference. Disponível em: https://www.w3schools.com/tags/default.asp. Acesso em: 30 mar. 2025.</p>
+    <p>Introdução ao HTML5. Disponível em: https://tecnologias-web.github.io/capitulo2.html#tipos-de-marcadores-html. Acesso em: 30 mar. 2025.</p>
+    <code>Aluna: Eduarda Gerhardt dos Santos</code> <br>
+    <code>Curso: Dio HTML</code>
+</footer>
+</html>
